@@ -6,5 +6,5 @@ Projeto de estudo com uso das tecnologias Langchain Groq LLM RAG e Webyscraping
 pip install python-dotenv
 pip install langchain
 pip install -qU "langchain[groq]"
-
+pip install "langserve[all]"
 ```
