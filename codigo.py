@@ -40,7 +40,7 @@ texto = chain.invoke({"idioma": "espanhol",
 print(texto)
                       
 
-
+#Esse template ira receber uma lista de produtos cuja a saída será em formato JSON.
 template2 = ChatPromptTemplate.from_messages([
     ("system", "Escreva o texto em formato de {formato}"),
     ("user", "{texto}"),
