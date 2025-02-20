@@ -7,4 +7,5 @@ pip install python-dotenv
 pip install langchain
 pip install -qU "langchain[groq]"
 pip install "langserve[all]"
+pip install fastapi
 ```

@@ -40,13 +40,13 @@ texto = chain.invoke({"idioma": "espanhol",
 print(texto)
                       
 
-#Esse template ira receber uma lista de produtos cuja a saída será em formato JSON.
-template2 = ChatPromptTemplate.from_messages([
-    ("system", "Escreva o texto em formato de {formato}"),
-    ("user", "{texto}"),
-])                      
+# #Esse template ira receber uma lista de produtos cuja a saída será em formato JSON.
+# template2 = ChatPromptTemplate.from_messages([
+#     ("system", "Escreva o texto em formato de {formato}"),
+#     ("user", "{texto}"),
+# ])                      
 
-chain = template2 | model | parser
-texto = chain.invoke({"formato": "JSON", 
-                           "texto": "produto: arroz, valor: 10,00, quantidade: 3, produto: açucuar, valor:5,99, quantidade:5 "})
-print(texto)
+# chain = template2 | model | parser
+# texto = chain.invoke({"formato": "JSON", 
+#                            "texto": "produto: arroz, valor: 10,00, quantidade: 3, produto: açucuar, valor:5,99, quantidade:5 "})
+# print(texto)
